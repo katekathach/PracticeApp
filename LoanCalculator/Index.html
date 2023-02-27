@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Mortgage Loan Calculator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  </head>
+  <body>     
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <form id="loanShark" >
+                <div class="mb-3">
+                  <label for="loanAmount" class="form-label">Loan Amount:</label>
+                  <input type="loanAmount" class="form-control" id="loanAmount" name="loanAmount" aria-describedby="loanAmountsHelp" >
+                 
+                </div>
+                <div class="mb-3">
+                  <label for="InputPayments" class="form-label">Term(Months):</label>
+                  <input type="payments" class="form-control" id="InputPayments" name="paymentTerms">
+                </div>
+                <div class="mb-3">
+                    <label for="InputRate" class="form-label">Interest Rate:</label>
+                    <input type="Rate" class="form-control" id="Rate" name="Rate">
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit">Calculate</button>
+              </form>
+          </div>
+          <div class="col">
+            <h1 id="loanPay">Your Monthly Payments <i id="pay"></i></h1>
+            <div id="loanResult"></div>
+          </div>
+          
+        </div>
+        <div class="row p-2 gap-3">
+            <div class="table-responsive">
+               
+            </div>
+        </div>
+      </div>
+</body>
+
+</html>
+
+
+<script>
+
+    function CalculateLoan(formData){
+        //Function to calculate loan 
+        // Should out put HTML Table loan 
+        // Loop thru the terms and calculating monthly loan payments
+
+
+        /** for (let monthCount = 1 ; monthCount <= loan.term; ++monthCount) {} **/
+        //let monthlyRate
+        //let TotalMonltlyPayment
+        //let TotalInterest
+        //let MonthlyInterestRate
+        //let MonthlyInterest
+        //let MonthlyPrincipal
+        
+        //total cost  = total interest - loan amount
+        //principal = total payment - monthly interest
+        //total interest = term times monthly interest
+
+        // Call CalculateTotalMonthlyPayment
+        // Call CalculateTotalMonthlyInterest
+        // CalculateMonthlyRate
+        /*** ex. <table><th class='table-primary'>Month #</th>
+                <th class='table-primary'>Payment</th>
+                <th class='table-primary'>Principal</th>
+                <th class='table-primary'>Interest</th>
+                <th class='table-primary'>Total Interest</th>
+                <th class='table-primary'>Balance</th>
+                <td>terms</td>
+                <td>MontlyPayment</td>
+                <td>MontlyInterest</td>
+                <td>LoanAmount</td>
+                <table>
+                    
+        ***/
+
+
+        /*** What you will learn. Loops , concatenation , Math, Get data from form **/
+    }
+
+    function CalculateTotalMonthlyPayment(loanAmount, MonthlyRate, Terms){
+        //Should return the monthly payment
+        //monthly payment = principal x (interest rate / 12).
+    }
+
+    function CalculateTotalMonthlyInterest(Balance, MonthlyRate){
+        //Return 
+    }
+
+    function CalculateMonthlyRate(){
+        //Return 
+    }
+</script>
+
